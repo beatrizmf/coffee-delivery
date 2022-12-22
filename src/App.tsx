@@ -1,8 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
+
+import { Router } from './Router'
+
 function App() {
   return (
-    <div>
-      <h1>app</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+
+      {/* <GlobalStyle /> */}
+    </>
   )
 }
 
