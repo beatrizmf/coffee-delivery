@@ -1,10 +1,14 @@
 import { Outlet } from 'react-router-dom'
 
+import { Header } from '../../components/Header'
+
+import { WrapperContainer } from './styles'
+
 export function Wrapper() {
   return (
-    <>
-      <h1>Wrapper</h1>
+    <WrapperContainer>
+      <Header />
       <Outlet />
-    </>
+    </WrapperContainer>
   )
 }
